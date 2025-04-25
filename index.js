@@ -7,6 +7,7 @@ document.addEventListener("visibilitychange", () => {
       p.innerHTML = "Document is hidden"
       fetch("https://api.api-ninjas.com/v1/counter?id=become_hidden&hit=true", {
         method: "GET",
+        keepalive: true,
         headers: {
             "X-Api-Key": "n58t7xzI5s0/z6oOmzTRFw==UWqdyXHd03ufoYCJ"
         }
